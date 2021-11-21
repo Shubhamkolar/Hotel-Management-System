@@ -1,0 +1,131 @@
+-- phpMyAdmin SQL Dump
+-- version 3.2.0.1
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Aug 10, 2019 at 08:36 AM
+-- Server version: 5.1.36
+-- PHP Version: 5.3.0
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Database: `hotel_management`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `adminlog`
+--
+
+CREATE TABLE IF NOT EXISTS `adminlog` (
+  `user_name` varchar(50) NOT NULL,
+  `password` varchar(20) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `adminlog`
+--
+
+INSERT INTO `adminlog` (`user_name`, `password`) VALUES
+('avinash8564kumar@gmail.com', '1234');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `book_room`
+--
+
+CREATE TABLE IF NOT EXISTS `book_room` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `mobile` varchar(20) NOT NULL,
+  `check_in_date` datetime NOT NULL,
+  `check_out_date` datetime NOT NULL,
+  `pickup_address` varchar(200) NOT NULL,
+  `destination_address` varchar(200) NOT NULL,
+  `rent` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;
+
+--
+-- Dumping data for table `book_room`
+--
+
+INSERT INTO `book_room` (`id`, `first_name`, `last_name`, `email`, `mobile`, `check_in_date`, `check_out_date`, `pickup_address`, `destination_address`, `rent`) VALUES
+(1, 'Avinash ', 'Chaurasiya', 'avinash8564kumar@gmail.com', '8650163913', '2019-01-01 00:00:00', '2019-01-01 00:00:00', 'gkp', 'lko', ''),
+(8, 'Vinay', 'Chaurasiya', 'vinay@gmail.com', '7783925170', '2019-08-22 11:01:00', '2019-08-24 11:01:00', 'Khajuri', 'Khajani', ''),
+(7, 'Gopal ', 'Singh', 'gp@gmail.com', '9169849514', '2019-08-15 10:01:00', '2019-08-17 10:10:00', 'Khajuri', 'Gorakhpur', ''),
+(6, 'Rahul', 'Yadav', 'rayadav8382@gmail.com', '7455993925', '2019-08-15 10:00:00', '2019-08-20 10:00:00', 'lko', 'gkp', ''),
+(9, 'Avinash ', 'Chaurasiya', 'avinash8564kumar@gmail.com', '8650163913', '2019-04-20 10:08:00', '2019-05-02 11:00:00', 'khajuri', 'khajani', '15000'),
+(11, 'Krishna', 'Kumar', 'kkraj@gmail.com', '9807965833', '2019-08-15 10:10:00', '2019-08-16 10:10:00', 'Ghajipur', 'Lucknow', '400000'),
+(12, 'namrata', 'dubey', 'nm@gmail.com', '8564024010', '2019-11-11 19:01:00', '2019-11-12 12:00:00', 'lucknow', 'kanpur', '50000'),
+(13, 'Avinash ', 'chaurasiya', 'avinash8564kumar@gmail.com', '8650163913', '2019-11-11 10:00:00', '2019-12-12 11:00:00', 'gorakhpur', 'lucknow', '100000');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contact`
+--
+
+CREATE TABLE IF NOT EXISTS `contact` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `e_mail` varchar(50) NOT NULL,
+  `subject` varchar(500) NOT NULL,
+  `message` varchar(1000) NOT NULL,
+  `date_time` varchar(40) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+
+--
+-- Dumping data for table `contact`
+--
+
+INSERT INTO `contact` (`id`, `name`, `e_mail`, `subject`, `message`, `date_time`) VALUES
+(1, 'avinash kumar', 'avinash8564kuma', 'about your hotel', 'this is the best hotel', '08/08/19 10:34:24am'),
+(2, 'Bholu Chaurasiya', 'avinash8564kuma', 'about your hotel room', 'your hotel room is best', '09/08/19 12:41:27am'),
+(4, 'chotu cahurasiya', 'avinash8564kumar@gmail.com', 'about food', 'best food', '10/08/19 08:38:53am'),
+(5, 'chotu cahurasiya', 'avinash8564kumar@gmail.com', 'about food', 'best food', '10/08/19 08:41:12am'),
+(6, 'Bholu Chaurasiya', 'avinash8564kumar@gmail.com', 'about your hotel', 'best hotel', '10/08/19 08:44:19am'),
+(7, 'Bholu Chaurasiya', 'bholu8650kumar@gmail.com', 'about your management system', 'best managemant system', '10/08/19 01:47:31pm');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `register`
+--
+
+CREATE TABLE IF NOT EXISTS `register` (
+  `reg_id` int(10) NOT NULL AUTO_INCREMENT,
+  `reg_name` varchar(60) NOT NULL,
+  `reg_mobile` varchar(15) NOT NULL,
+  `reg_email` varchar(50) NOT NULL,
+  `reg_password` varchar(10) NOT NULL,
+  `reg_gender` varchar(20) NOT NULL,
+  `reg_city` varchar(30) NOT NULL,
+  `reg_date` varchar(40) NOT NULL,
+  PRIMARY KEY (`reg_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=20 ;
+
+--
+-- Dumping data for table `register`
+--
+
+INSERT INTO `register` (`reg_id`, `reg_name`, `reg_mobile`, `reg_email`, `reg_password`, `reg_gender`, `reg_city`, `reg_date`) VALUES
+(1, 'avinash kumar', '8650163913', 'avinash8564kumar@gmail.com', '1234', 'Male', 'Gorakhpur', '08/08/19 10:04:54am'),
+(2, 'Avinash kumar', '8650163913', 'avinash8564kumar@gmail.com', '12345', 'Male', 'Gorakhpur', '08/08/19 11:34:11am'),
+(15, 'chotu', '8564024010', 'chotu@gmail.com', '12345', 'Male', 'Gorakhpur', '10/08/19 08:37:46am'),
+(16, 'Avinash kumar', '8650163913', 'vinay@gmail.com', '123456', 'Male', 'Gorakhpur', '10/08/19 08:43:09am'),
+(17, 'chotu', '8650163913', 'avinash8564kumar@gmail.com', '1234567', 'Male', 'Gautam Buddha Nagar', '10/08/19 11:53:57am'),
+(18, 'Krishna Kumar', '98079965833', 'kkraj@gmail.com', '123456', 'Male', 'Ghajipur', '10/08/19 12:42:09pm'),
+(19, 'chotu', '8650163913', 'avinash8564kumar@gmail.com', '123456789', 'Male', 'Gorakhpur', '10/08/19 01:45:59pm');
