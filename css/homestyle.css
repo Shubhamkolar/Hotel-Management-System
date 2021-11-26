@@ -1,0 +1,160 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+/*Menubar/header part css*/
+.menurow{
+    background-color: #FFB400;
+}
+.textstyle{
+    font-size: 30px;
+    margin-top:12px;
+    font-family:Algerian;
+    color:darkmagenta;
+    font-weight:bolder;
+}
+.imgsec{
+    height:70px;
+    width:90px;
+    background-color: white;
+    margin: auto;
+    border:2px double black;
+    border-radius: 50%;
+
+}
+.imgstyle{
+    height:70px;
+    width:90px;
+    border-radius:50%;
+}
+/*experience part css*/
+/* .exp{
+    border:1px solid black;
+    border-radius:6px;
+} */
+.experience{
+    font-family:Comic Sans MS;
+    color:maroon;
+}
+.experience1{
+    font-family: Algerian;
+    color:aqua;
+}
+.experience2{
+    font-family: Bradley Hand ITC;
+    font-weight:bold;
+    color:#886dec;
+}
+/*services part css*/
+.services{
+    font-size: 25px;
+    font-family: Algerian;
+    color:rgb(250, 11, 250);
+}
+/*service1 part css*/
+.services1{
+    font-size: 20px;
+    font-family: monospace;
+    color: rgb(69, 113, 236);
+}
+/*footer part*/
+body {
+        font-family: 'Signika', sans-serif;
+     }
+     .bg-grey {
+        background: #292929;
+     }
+     .logo-footer {
+        margin-bottom: 40px;
+     }
+     footer {
+            color: grey;
+     }
+     footer p, a {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+footer h6 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 40px;
+    position: relative;
+}
+footer h6:after {
+    position: absolute;
+    content: "";
+    background: grey;
+    width: 12%;
+    height: 1px;
+    left: 0;
+    bottom: -20px;
+}
+     .btn-footer {
+                 color: grey;
+              
+                text-decoration: none;
+                border: 1px solid;
+                border-radius: 43px;
+                font-size: 13px;
+                padding: 7px 30px;
+                line-height: 47px;
+     }
+     .btn-footer:hover {
+                
+                text-decoration: none;
+               
+     }
+    .form-footer input[type="text"] {
+        border: none;
+    border-radius: 16px 0 0 16px;
+    outline: none;
+    padding-left: 10px;
+    
+}
+::placeholder {
+    font-size: 10px;
+    padding-left: 10px;
+    font-style: italic;
+}
+ .form-footer input[type="button"] {
+    border: none;
+    background:#232323;
+        margin-left: -5px;
+    color: #fff;
+    outline: none;
+    border-radius: 0 16px 16px 0;
+    padding: 2px 12px;
+}
+     .social .fa {
+    color: grey;
+    font-size: 22px;
+    padding: 10px 15px;
+    background: #3c3c3c;
+}
+     footer ul li {
+    list-style: none;
+    display: block;
+}
+  footer ul  {
+   padding-left: 0;
+}
+footer ul  li a{
+  text-decoration: none;
+  color: grey;
+  text-decoration:none;
+}
+a:hover {
+    text-decoration: none;
+    color: #f5f5f5 !important;
+    
+}
+.logo-part {
+    border-right: 1px solid grey;
+    height: 100%;
+    }
+    .hello{
+    font-size: 27px;
+    margin-top:10px;
+    font-family:Algerian;
+    color:darkmagenta;
+    font-weight:bolder;
+}
